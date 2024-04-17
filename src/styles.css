@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #7de2d1;
+  margin: 0;
+  padding: 0;
+}
+select {
+  padding: 1px 2px;
+  border: 1px solid #ccc;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  background-color: white;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  height: 1.5%;
+}
+
+/* You can also add more styling for focus to improve accessibility */
+select:focus {
+  outline: none; /* Removes the default focus outline */
+  border-color: #0056b3; /* Highlight with a blue border on focus */
+  box-shadow: 0 0 5px rgba(0, 86, 179, 0.25); /* Adds a glow effect */
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+}
+.nav input {
+  height: 2%;
+  margin-top: 20px;
+}
+.container {
+  justify-content: space-around;
+  margin: 10px;
+}
+.container > div {
+  flex: 1;
+  padding: 20px;
+  background-color: #fffafb;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+button {
+  font-size: 16px;
+  border-color: #2423231e;
+  background-color: #ffffff;
+  color: #000000;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #7de2d1;
+}
+
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container > div {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
